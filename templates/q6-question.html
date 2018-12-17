@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+</head>
+<body>
+    {% if message %}
+        <h1>Nope. Try again.</h1>
+    {% endif %}
+
+    <p>To this question, you certainly sha1l make a hash of the answer</p>
+    <form method="post">
+        <input type="text" name="answer"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

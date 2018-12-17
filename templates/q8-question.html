@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+    <style>
+        .container {
+            min-height: 90px;
+            width: 90px;
+            padding: 5px;
+            border: thin solid black;
+            border-radius: 3px;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .colour {
+            height:40px;
+            width: 40px;
+            margin: 0 auto;
+        }
+        .name {
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+{% if gibberish %}
+    <p>No, Jeremy Corbyn is nothing like that</p>
+
+        <hr style="margin-top: 40px;"/>
+<br style="clear: both; "/>
+{% endif %}
+
+{% if colour %}
+    <div style=" margin-bottom: 40px;">
+        <p>No, this isn't Jeremy Corbyn!</p>
+        <div class="container">
+        <div class="colour" style="background-color: #{{colour}}">
+
+        </div>
+        <div class="name">
+            Jeremy Corbyn
+        </div>
+    </div>
+    <br style="clear: both;"/>
+    <p>Try again</p>
+    </div>
+    <hr style="margin-top: 40px;"/>
+<br style="clear: both; "/>
+
+{% endif %}
+
+
+
+
+
+
+
+
+    <p style="margin-bottom:40px;">If these people are these things...</p>
+
+    <div class="container">
+        <div class="colour" style="background-color: #121084">
+
+        </div>
+        <div class="name">
+            Richard Hadden
+        </div>
+    </div>
+
+    
+
+    <div class="container">
+        <div class="colour" style="background-color: #210207">
+
+        </div>
+        <div class="name">
+            W.H. Auden
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #300130">
+
+        </div>
+        <div class="name">
+            Gene Hackman
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #010218">
+
+        </div>
+        <div class="name">
+            Murial Spark
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #010394">
+
+        </div>
+        <div class="name">
+            Justin Bieber
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #201246">
+
+        </div>
+        <div class="name">
+            Uri Geller
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #240569">
+
+        </div>
+        <div class="name">
+            Jacob Rees-Mogg
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #310123">
+
+        </div>
+        <div class="name">
+            Norman Mailer
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="colour" style="background-color: #031205">
+
+        </div>
+        <div class="name">
+            Leslie Ames (Cricketer)
+        </div>
+    </div>
+
+
+<br style="clear: both;"/>
+    <div style="margin-top: 40px">
+        <p> ... what is Jeremy Corbyn?</p>
+    <form method="post">
+        <input type="text" name="answer"/>
+        <input type="submit" value="Submit"/>
+    </form>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+</head>
+<body>
+    <h1>The all-singing, all-dancing, all-bloody-impossible, Question 11!</h1>
+    <h2>(Being the final question)</h2>
+
+    <p>Your challenge is...</p>
+
+    <img src="{{ url_for('static', filename='ob.jpg') }}" height=150/>
+
+    <p>...construct an apt seasonal greeting!</p>
+
+
+    <form method="post">
+        <input type="text" name="input"/>
+        <input type="submit" value="Submit"/>
+    </form>
+    {% if message %}
+        <p style="color: red; font-weight: 900;">{{message}}</p>
+    {% endif %}
+
+    {% if mstring %}
+        <p>Your message so far:</p>
+        <h1>{{ mstring }}</h1>
+
+    {% endif %}
+
+</body>
+</html>

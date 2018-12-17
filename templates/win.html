@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QUIZ</title>
+</head>
+<body>
+    <h1>You won!</h1>
+    
+    {% if show_form %}
+    <form method="post">
+        <label for="name">Enter your name to claim pint: </label>
+        <input type="text" name="name" placeholder="Your name" />
+        <input type="submit" value="Send" />
+    </form>
+    {% else %}
+    <h2>Thanks! (I'll be in touch) (Really)</h2>
+    {% endif %}
+
+    <img src="{{ url_for('static', filename='pint.jpg') }}" />
+</body>
+</html>
